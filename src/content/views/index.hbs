@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Prónostico del clima</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p></p>
+
+        <form>
+            <input placeholder="Ingresa una ubicación">
+            <button>Buscar</button>
+        </form>
+
+        <p id="message-1"></p>
+
+        <br>
+        <br>
+        <span class="bold" id="ubicacion"> </span>
+        <span class="text-secondary" id="leyenda"> </span>
+
+        <table>
+            <tr>
+                <th>Temperatura (°C)</th>
+                <th>Sensación térmica (°C)</th>
+                <th>Humedad</th>
+                <th>Uv</th>
+            </tr>
+            <tr>
+                <td id="temp"></td>
+                <td id="sensacion"></td>
+                <td id="humedad"></td>
+                <td id="uv"></td>
+            </tr>
+        </table>
+
+
+    </div>
+
+
+    </div>
+
+    {{>footer}}
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
